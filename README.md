@@ -20,12 +20,15 @@ graph TB
         tailscaled-router --> VM
         tailscaled-router --> Private-Endpoint-Blob
         tailscaled-router --> Private-Endpoint-StaticWeb
-        Private-Endpoint-Blob --> StorageAccount
-        Private-Endpoint-StaticWeb --> StorageAccount
+
     end
     subgraph Azure-DNS
         DNS-Endpoint-168.63.129.16 --> Private-DNS-Zones
         DNS-Endpoint-168.63.129.16 --> Azure-Recursive-resolvers
+    end
+    subgraph Azure-Multitenants
+        Private-Endpoint-Blob --> StorageAccount
+        Private-Endpoint-StaticWeb --> StorageAccount
     end
     subgraph Codespaces
         tailscaled --> Coordination-Server
