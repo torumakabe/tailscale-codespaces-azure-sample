@@ -3,7 +3,6 @@
 ## Overview
 
 * Sample devcontainer configuration and Terraform HCL for connecting GitHub Codespaces and Azure VNet with Tailscale.
-*
 * [Subnet routers](https://tailscale.com/kb/1019/subnets/) for Azure VNet
   * No need to install tailscale on each VM in Azure VNet
 * [DNS forwarding](https://tailscale.com/kb/1054/dns/) for Azure VM / Private Endpoint name resolution
