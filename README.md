@@ -35,6 +35,10 @@ graph TB
     end
 ```
 
+A pattern that achieves the same purpose with OpenVPN is the following.
+
+> [Connecting GitHub Codespaces and Azure VNet with OpenVPN](https://github.com/ToruMakabe/openvpn-codespaces-azure-sample)
+
 ## Notes
 
 ### Authorization
