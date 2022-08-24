@@ -103,7 +103,6 @@ resource "azurerm_subnet" "pe" {
   resource_group_name                            = azurerm_resource_group.ts_sample.name
   virtual_network_name                           = azurerm_virtual_network.default.name
   address_prefixes                               = [module.subnet_addrs.network_cidr_blocks["pe"]]
-  enforce_private_link_endpoint_network_policies = true
 }
 
 resource "azurerm_network_security_group" "router" {
